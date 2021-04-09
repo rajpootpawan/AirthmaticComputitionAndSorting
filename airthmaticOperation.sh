@@ -21,3 +21,8 @@ echo $result2
 
 result3=$(( c+a/b ))
 echo $result3
+
+#UC5 adding logic for Compute a % b + c
+
+result4=$(( a % b + c ))
+echo $result4
