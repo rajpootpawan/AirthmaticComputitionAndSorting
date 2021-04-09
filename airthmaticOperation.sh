@@ -11,3 +11,8 @@ read -p "Enter the Third number : " c
 
 result1=$(( a+b*c ))
 echo $result1
+
+#UC3 add logic for Compute a * b + c
+
+result2=$(( a*b+c ))
+echo $result2
