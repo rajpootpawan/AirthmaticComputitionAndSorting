@@ -35,3 +35,13 @@ dict["4"]=$result4
 #UC6 adding logic for Store the results in a Dictionary for every Computation.
 
 echo ${dict[@]}
+
+#UC7 adding logic for Read the values from the Dictionary into the array
+declare -a array
+j=0
+for (( i=1;i<5;i++ ))
+do
+	array[$j]=${dict[$i]}
+	j=$(( j+1 ))
+done
+echo "The element in the array are : " ${array[@]}
