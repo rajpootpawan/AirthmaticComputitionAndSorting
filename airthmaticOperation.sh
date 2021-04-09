@@ -45,3 +45,23 @@ do
 	j=$(( j+1 ))
 done
 echo "The element in the array are : " ${array[@]}
+
+#UC8 adding logic for Short the array result to show the Computation value in Ascinding order
+for (( i=0;i<4;i++ ))
+do
+	for (( j=$(( $i+1 ));j<4;j++ ))
+	do
+		if [ ${array[$i]} -gt ${array[$j]} ]
+		then 
+			temp=${array[$i]}
+			array[$i]=${array[$j]}
+			array[$j]=$temp
+		fi
+	done
+done	
+echo "The computation result in assending order : " ${array[@]}
+
+#=======================================================End ==================================================================================================
+
+
+
